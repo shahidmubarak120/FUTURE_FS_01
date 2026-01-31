@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import { Helmet } from "react-helmet";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ReactTyped } from "react-typed";
@@ -49,12 +50,11 @@ function App() {
 
       
 
-      <HelmetProvider>
-      <div className="relative bg-gray-900 text-white">
-        <Helmet>
-          <title>Shahid Mubarak | Portfolio</title>
-          <meta name="description" content="Portfolio Website" />
-        </Helmet>
+      <Helmet>
+  <title>Shahid Mubarak Portfolio</title>
+  <meta name="description" content="Full Stack Developer Portfolio" />
+ </Helmet>
+
 
       <Navbar />
       
@@ -117,8 +117,8 @@ function App() {
       <ParticlesBG />
       <ChatBot />
       
-      </div>
-      </HelmetProvider>
+      
+    
       
 
     </div>
